@@ -37,3 +37,19 @@ Interpolations
   The expressions will be evaluated as JavaScript in the data scope of the owner Vue instance, one restriction is that each binding can only contain one single expression.
 
 
+Directives
+
+  # Arguments
+  Some directives have an argument denoted by a colon after the directive name.
+  <a v-bind:href="url"></a>
+
+  We're telling it to bind the href's attributes with the value of the expression 'url'
+
+  <a v-on:click="doSomething"></a>
+
+  # Modifiers
+  Modifiers are special postfixes denoted by a dot, it indicates that a directive should be bound in some special way.
+
+  <form v-on:submit.prevent="onSubmit"></form>
+  .prevent is calling event.preventDefault()
+
