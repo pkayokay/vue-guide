@@ -40,6 +40,6 @@ new Vue({
 // => "a is: 1"
 // There's also mounted, updated, destroyed, all of these lifecycle hooks are called with their 'this' context pointing to the Vue instance invoking it.
 
-
-
+// Reference the Lifecycle Diagram for an overview
+// https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram
 
