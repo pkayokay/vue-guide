@@ -53,3 +53,17 @@ Directives
   <form v-on:submit.prevent="onSubmit"></form>
   .prevent is calling event.preventDefault()
 
+
+Shorthands
+
+  The v- prefixes serves as a visual cue for identifying Vue-specific attributes. The v- becomes less important when you're building a SPA, so Vue.js provides a shorthand method for the two most common directives:
+
+  v-bind
+  <a v-bind:href="url"></a>
+  <a :href="url"></a>
+
+
+  v-on
+  <a v-on:click="doSomething"></a>
+  <a @click="doSomething"></a>
+
